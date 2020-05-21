@@ -18,6 +18,8 @@ sudo apt -y install git curl cmake
 # note: these will fail if \ is followed by whitespace
 sudo apt -y install \
     build-essential \
+    default-jre \
+    libreoffice-java-common \
     gawk \
     valgrind \
     texinfo \
