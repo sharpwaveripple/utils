@@ -3,6 +3,7 @@
 # basic directories
 mkdir ~/bin
 mkdir ~/lib
+mkdir ~/work
 
 # quiet ssh keygen
 cat /dev/zero | ssh-keygen -q -N "" > /dev/null
