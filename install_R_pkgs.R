@@ -8,4 +8,4 @@ pkg <- c('tidyverse',
          'sem',
          'lavaan')
 
-install.packages(pkg, dependencies = TRUE)
+install.packages(pkg, lib = '~/lib/R/4.0/' dependencies = TRUE)
