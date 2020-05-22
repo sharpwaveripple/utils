@@ -4,6 +4,8 @@ pkg <- c('tidyverse',
          'furrr',
          'psych',
          'lmerTest',
-         'mice')
+         'miceadds',
+         'sem',
+         'lavaan')
 
 install.packages(pkg, dependencies = TRUE)
