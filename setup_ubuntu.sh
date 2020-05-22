@@ -71,8 +71,8 @@ git config --global user.name "Jonathan Tay"
 
 # get my dotfiles
 git clone https://github.com/sharpwaveripple/dotfiles.git
-mv ~/dotfiles/.bashrc ~/.bashrc
-mv ~/dotfiles/.Rprofile ~/.Rprofile
+cp ~/dotfiles/bashrc ~/.bashrc
+cp ~/dotfiles/.Rprofile ~/.Rprofile
 
 # commacd
 curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.sh
