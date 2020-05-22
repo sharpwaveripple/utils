@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# for passwordless sudo
+echo "jon ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+
 # basic directories
 mkdir ~/bin
 mkdir ~/lib
