@@ -47,6 +47,8 @@ sudo apt -y install \
     fd-find \
     ripgrep \
     texlive-latex-extra \
+    pandoc \
+    pandoc-citeproc \
     r-base \
     r-base-dev \
     gdebi-core \
