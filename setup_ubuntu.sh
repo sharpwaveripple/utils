@@ -43,6 +43,8 @@ sudo apt -y install \
     libmagickcore-dev \
     libmagickwand-dev \
     libvterm-dev \
+    libopenblas-dev \
+    libgfortran4 \
     shellcheck \
     fd-find \
     ripgrep \
