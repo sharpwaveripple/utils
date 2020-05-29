@@ -9,4 +9,4 @@ pkg <- c("tidyverse",
          "sirt",
          "lavaan")
 
-install.packages(pkg, lib = "~/lib/R/4.0/" dependencies = TRUE)
+install.packages(pkg, lib = "~/lib/R/4.0/", dependencies = TRUE)
