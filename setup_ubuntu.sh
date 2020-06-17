@@ -48,6 +48,7 @@ sudo apt -y install \
     shellcheck \
     fd-find \
     ripgrep \
+    texlive-fonts-extra \
     texlive-latex-extra \
     pandoc \
     pandoc-citeproc \
