@@ -49,6 +49,7 @@ sudo apt -y install \
     fd-find \
     ripgrep \
     texlive-latex-extra \
+    latexmk \
     pandoc \
     pandoc-citeproc \
     r-base \
