@@ -7,6 +7,7 @@ pkg <- c("tidyverse",
          "miceadds",
          "sem",
          "sirt",
-         "lavaan")
+         "lavaan",
+         "forecast")
 
 install.packages(pkg, lib = "~/lib/R/4.0/", dependencies = TRUE)
