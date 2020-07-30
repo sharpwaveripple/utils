@@ -45,9 +45,15 @@ sudo apt -y install \
     libvterm-dev \
     libopenblas-dev \
     libgfortran4 \
+    libpng-dev \
+    zlib1g-dev \
+    libpoppler-glib-dev \
+    libpoppler-private-dev \
+    libpoppler-glib8 \
     shellcheck \
     fd-find \
     ripgrep \
+    texlive-fonts-extra \
     texlive-latex-extra \
     latexmk \
     pandoc \
