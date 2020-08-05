@@ -85,7 +85,7 @@ git config --global user.email "jonathantay193@gmail.com"
 git config --global user.name "Jonathan Tay"
 
 # get my dotfiles
-git clone https://github.com/sharpwaveripple/dotfiles.git
+git clone https://github.com/sharpwaveripple/dotfiles.git ~/
 cp ~/dotfiles/bashrc ~/.bashrc
 cp ~/dotfiles/.Rprofile ~/.Rprofile
 
