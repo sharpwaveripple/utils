@@ -94,7 +94,7 @@ curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.
 
 # anaconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
-bash ~/miniconda.sh -b -p ~/bin/miniconda
+bash ~/miniconda.sh -b -p ~/.anaconda3
 
 sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 
