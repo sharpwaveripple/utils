@@ -100,7 +100,9 @@ sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 
 source ~/.bashrc
 
-conda install -y numpy scipy pandas sklearn statsmodels matplotlib seaborn
+conda install -y numpy scipy pandas scikit-learn statsmodels \
+    matplotlib seaborn \
+    isort nose pytest
 
 # this is where the fun begins
 emacs_ver=emacs-27
