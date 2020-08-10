@@ -55,6 +55,7 @@ sudo apt -y install \
     ripgrep \
     texlive-fonts-extra \
     texlive-latex-extra \
+    texlive-xetex \
     latexmk \
     pandoc \
     pandoc-citeproc \
