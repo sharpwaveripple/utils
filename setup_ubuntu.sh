@@ -56,6 +56,7 @@ sudo apt -y install \
     texlive-fonts-extra \
     texlive-latex-extra \
     texlive-xetex \
+    sshpass \
     latexmk \
     pandoc \
     pandoc-citeproc \
@@ -103,7 +104,7 @@ source ~/.bashrc
 
 conda install -y numpy scipy pandas scikit-learn statsmodels \
     matplotlib seaborn \
-    isort nose pytest jupyter
+    isort nose pytest
 
 # this is where the fun begins
 emacs_ver=emacs-27
