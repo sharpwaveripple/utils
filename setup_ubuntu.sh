@@ -75,7 +75,8 @@ sudo apt -y install \
     libasound2 \
     libxi6 \
     libxtst6 \
-    libx11-xcb-dev
+    libx11-xcb-dev \
+    libgpm-dev
 
 # an incredible guide to texlive variants
 # https://tex.stackexchange.com/questions/245982/differences-between-texlive-packages-in-linux
