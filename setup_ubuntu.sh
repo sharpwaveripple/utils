@@ -37,6 +37,7 @@ sudo apt -y install \
     libgnutls28-dev \
     libxpm-dev \
     libgif-dev \
+    libjansson-dev \
     libwebkit2gtk-4.0-dev \
     libacl1-dev \
     libm17n-dev \
