@@ -20,7 +20,8 @@ sudo ./configure \
     --with-json \
     --with-modules \
     --with-xwidgets \
-    --with-imagemagick
+    --with-imagemagick \
+    --with-cairo
     # --with-x-toolkit=lucid
 
 sudo make
