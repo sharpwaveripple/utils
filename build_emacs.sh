@@ -14,13 +14,14 @@ else
 fi
 
 cd ${emacs_dir}
-./autogen.sh
-./configure \
+sudo ./autogen.sh
+sudo ./configure \
     --with-mailutils \
     --with-json \
     --with-modules \
     --with-xwidgets \
     --with-imagemagick
     # --with-x-toolkit=lucid
-make
+
+sudo make
 sudo make install
