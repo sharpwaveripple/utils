@@ -77,7 +77,8 @@ sudo apt -y install \
     libxi6 \
     libxtst6 \
     libx11-xcb-dev \
-    libgpm-dev
+    libgpm-dev \
+    zstd
 
 # an incredible guide to texlive variants
 # https://tex.stackexchange.com/questions/245982/differences-between-texlive-packages-in-linux
