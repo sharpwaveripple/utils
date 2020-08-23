@@ -36,6 +36,7 @@ sudo apt -y install \
     gnulib \
     libotcl1-dev \
     libotf-dev \
+    libgsl-dev \
     libsystemd-dev \
     libgnutls28-dev \
     libxpm-dev \
