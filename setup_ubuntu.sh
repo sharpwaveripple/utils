@@ -26,6 +26,7 @@ sudo apt -y install \
     build-essential \
     xorg-dev \
     default-jre \
+    acetoneiso \
     libreoffice-java-common \
     gawk \
     valgrind \
