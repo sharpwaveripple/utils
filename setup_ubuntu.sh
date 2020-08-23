@@ -5,7 +5,9 @@ echo "jon ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 
 # basic directories
 mkdir ~/bin
-mkdir ~/lib
+mkdir ~/.lib
+mkdir ~/.lib/R
+mkdir ~/.lib/R/4.0
 mkdir ~/work
 
 # quiet ssh keygen
@@ -62,6 +64,10 @@ sudo apt -y install \
     latexmk \
     pandoc \
     pandoc-citeproc \
+    maildir-utils \
+    offlineimap \
+    isync \
+    gnupg2 \
     r-base \
     r-base-dev \
     gdebi-core \
