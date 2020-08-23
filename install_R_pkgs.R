@@ -5,9 +5,13 @@ pkg <- c("tidyverse",
          "psych",
          "lmerTest",
          "miceadds",
+         "mice",
+         "mediate",
          "sem",
          "sirt",
          "lavaan",
          "forecast")
 
-install.packages(pkg, lib = "~/lib/R/4.0/", dependencies = TRUE)
+install.packages(pkg, dependencies = TRUE)
+
+## install.packages(pkg, lib = "~/lib/R/4.0/", dependencies = TRUE)
