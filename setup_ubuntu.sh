@@ -52,6 +52,7 @@ sudo apt -y install \
     libopenblas-dev \
     libgfortran4 \
     libpng-dev \
+    libappindicator1 \
     zlib1g-dev \
     libpoppler-glib-dev \
     libpoppler-private-dev \
