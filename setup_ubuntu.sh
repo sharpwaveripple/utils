@@ -53,6 +53,7 @@ sudo apt -y install \
     libgfortran4 \
     libpng-dev \
     libappindicator1 \
+    npm \
     zlib1g-dev \
     libpoppler-glib-dev \
     libpoppler-private-dev \
@@ -97,8 +98,8 @@ sudo apt -y install \
 # sudo gdebi rstudio-server-1.2.5042-amd64.deb
 
 # configure git
-git config --global user.email "jonathantay193@gmail.com"
-git config --global user.name "Jonathan Tay"
+git config user.email "jonathantay193@gmail.com"
+git config user.name "Jonathan Tay"
 
 # get my dotfiles
 git clone https://github.com/sharpwaveripple/dotfiles.git ~/
@@ -111,6 +112,8 @@ curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.
 # anaconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p ~/.anaconda3
+
+sudo npm i -g bash-language-server
 
 sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 
