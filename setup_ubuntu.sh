@@ -19,6 +19,8 @@ echo "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/" | sudo tee
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 
 sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
+sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa
+sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 sudo apt -y install git curl cmake
 
 # note: these will fail if \ is followed by whitespace
@@ -40,6 +42,11 @@ sudo apt -y install \
     libgsl-dev \
     libsystemd-dev \
     libgnutls28-dev \
+    gcc-10 \
+    g++-10 \
+    libgccjit0 \
+    libgccjit-10-dev \
+    libgcc-10-dev \
     libxpm-dev \
     libgif-dev \
     libjansson-dev \
@@ -88,7 +95,14 @@ sudo apt -y install \
     libxtst6 \
     libx11-xcb-dev \
     libgpm-dev \
+    libncurses-dev \
+    libmpfr-dev \
+    flex \
+    autogen \
+    dejagnu \
     zstd
+
+# sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100 --slave /usr/bin/g++ g++ /usr/bin/g++-10 --slave /usr/bin/gcov gcov /usr/bin/gcov-10
 
 # an incredible guide to texlive variants
 # https://tex.stackexchange.com/questions/245982/differences-between-texlive-packages-in-linux
