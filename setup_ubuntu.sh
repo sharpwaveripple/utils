@@ -61,6 +61,7 @@ sudo apt -y install \
     libpng-dev \
     libappindicator1 \
     npm \
+    silversearcher-ag \
     zlib1g-dev \
     libpoppler-glib-dev \
     libpoppler-private-dev \
@@ -100,7 +101,8 @@ sudo apt -y install \
     flex \
     autogen \
     dejagnu \
-    zstd
+    zstd \
+    ttf-anonymous-pro
 
 # sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100 --slave /usr/bin/g++ g++ /usr/bin/g++-10 --slave /usr/bin/gcov gcov /usr/bin/gcov-10
 
@@ -128,6 +130,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/
 bash ~/miniconda.sh -b -p ~/.anaconda3
 
 sudo npm i -g bash-language-server
+sudo npm i -g n        # npm package manager
 
 sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 

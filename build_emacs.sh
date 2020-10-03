@@ -7,22 +7,31 @@ emacs_repo=https://github.com/emacs-mirror/emacs.git
 if [[ -d ${emacs_dir} ]]; then
     echo "Emacs found in ${emacs_path}, updating to latest version"
     cd ${emacs_dir}
-    sudo git pull
+    git pull
 else
     echo "Emacs not found in ${emacs_path}, cloning from ${emacs_repo}"
-    sudo git clone ${emacs_repo} ${emacs_dir} 
+    git clone ${emacs_repo} ${emacs_dir}
 fi
 
+# https://emacs.stackexchange.com/questions/59538/compile-emacs-from-feature-native-comp-gccemacs-branch-on-ubuntu
+
+export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
+
 cd ${emacs_dir}
-sudo ./autogen.sh
-sudo ./configure \
+git checkout feature/native-comp
+make distclean
+./autogen.sh
+./configure \
+    --with-nativecomp \
     --with-mailutils \
     --with-json \
     --with-modules \
     --with-xwidgets \
     --with-imagemagick \
-    --with-cairo
+    --with-cairo \
+    --with-nativecomp \
+    CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
     # --with-x-toolkit=lucid
 
-sudo make
-sudo make install
+# if ever in doubt, use ./configure --help
+# gconf-service
