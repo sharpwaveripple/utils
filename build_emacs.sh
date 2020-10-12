@@ -22,7 +22,6 @@ git checkout feature/native-comp
 make distclean
 ./autogen.sh
 ./configure \
-    --with-nativecomp \
     --with-mailutils \
     --with-json \
     --with-modules \
