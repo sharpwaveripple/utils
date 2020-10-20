@@ -116,6 +116,7 @@ sudo apt -y install \
 # configure git
 git config user.email "jonathantay193@gmail.com"
 git config user.name "Jonathan Tay"
+git config core.editor "emacs"
 
 # get my dotfiles
 git clone https://github.com/sharpwaveripple/dotfiles.git ~/
