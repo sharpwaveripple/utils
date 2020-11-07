@@ -138,8 +138,8 @@ sudo -S apt update && sudo apt -y upgrade && sudo apt -y autoremove
 source ~/.bashrc
 
 conda install -y numpy scipy pandas scikit-learn statsmodels \
-    matplotlib seaborn \
-    isort nose pytest
+      matplotlib seaborn plotly ipython jupyter \
+      isort nose pytest flake8 xlrd lxml openpyxl
 
 # this is where the fun begins
 emacs_ver=emacs-27
