@@ -102,6 +102,15 @@ sudo apt -y install \
     autogen \
     dejagnu \
     zstd \
+    libboost-program-options-dev \
+    libboost-program-options1.71-dev \
+    libboost-program-options1.71.0 \
+    libboost-system-dev \
+    libboost-system1.71-dev \
+    libboost-system1.71.0 \
+    libboost1.71-dev \
+    libfuse-dev \
+    libudev-dev \
     ttf-anonymous-pro
 
 # sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100 --slave /usr/bin/g++ g++ /usr/bin/g++-10 --slave /usr/bin/gcov gcov /usr/bin/gcov-10
