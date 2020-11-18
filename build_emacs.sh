@@ -32,6 +32,6 @@ make distclean
     CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
     # --with-x-toolkit=lucid
 
-make install -j4
+make -j4
 # if ever in doubt, use ./configure --help
 # gconf-service
