@@ -42,6 +42,7 @@ sudo apt -y install \
     libgsl-dev \
     libsystemd-dev \
     libgnutls28-dev \
+    libreadline-dev \
     gcc-10 \
     g++-10 \
     libgccjit0 \
