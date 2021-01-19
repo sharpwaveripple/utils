@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+import os
+import pathlib
+import tarfile
+
+
+def setup_paths():
+    home = str(pathlib.Path.home())
+    paths = {
+        "home": home,
+        "desktop": os.path.join(home, "desktop"),
+        "arm": os.path.join(home, "arm"),
+    }
+    return paths
+
+
+def move_tarballs(source_dir, target_dir):
+    print("Searching for .txz files")
+    print(f"Source directory: {source_dir}")
+    print(f"Target directory: {target_dir}")
+    for i in os.listdir(source_dir):
+        if i.endswith(".txz"):
+            source_file = os.path.join(source_dir, i)
+            target_file = os.path.join(target_dir, i)
+            print(f"Moving {source_file} to {target_file}")
+            # os.rename(source_file, target_file)
+
+
+def extract_tarballs(dirname):
+    print("Searching for .txz files")
+    print(f"Changing directory to {dirname}")
+    os.chdir(dirname)
+    for i in os.listdir(dirname):
+        if i.endswith(".txz"):
+            source_file = os.path.join(dirname, i)
+            target_file = os.path.join(dirname, i.rstrip('.txz'))
+            if os.path.exists(target_file):
+                print(f"{target_file} found, removing")
+                os.remove(target_file)
+            tf = tarfile.open(source_file)
+            tf.extractall()
+            tf.close()
+
+
+paths = setup_paths()
+move_tarballs(paths["desktop"], paths["arm"])
+extract_tarballs(paths["desktop"])
