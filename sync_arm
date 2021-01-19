@@ -38,9 +38,13 @@ def extract_tarballs(dirname):
             if os.path.exists(target_file):
                 print(f"{target_file} found, removing")
                 shutil.rmtree(target_file)
+            print(f"Extracting {source_file}")
             tf = tarfile.open(source_file)
             tf.extractall()
             tf.close()
+            print(f"Removing {source_file}")
+            os.remove(source_file)
+
 
 
 paths = setup_paths()
