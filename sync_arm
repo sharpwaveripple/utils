@@ -44,4 +44,4 @@ def extract_tarballs(dirname):
 
 paths = setup_paths()
 move_tarballs(paths["desktop"], paths["arm"])
-extract_tarballs(paths["desktop"])
+extract_tarballs(paths["arm"])
