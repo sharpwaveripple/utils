@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import pathlib
+import shutil
 import tarfile
 
 
@@ -23,7 +24,7 @@ def move_tarballs(source_dir, target_dir):
             source_file = os.path.join(source_dir, i)
             target_file = os.path.join(target_dir, i)
             print(f"Moving {source_file} to {target_file}")
-            # os.rename(source_file, target_file)
+            shutil.move(source_file, target_file)
 
 
 def extract_tarballs(dirname):
@@ -36,7 +37,7 @@ def extract_tarballs(dirname):
             target_file = os.path.join(dirname, i.rstrip('.txz'))
             if os.path.exists(target_file):
                 print(f"{target_file} found, removing")
-                os.remove(target_file)
+                shutil.rmtree(target_file)
             tf = tarfile.open(source_file)
             tf.extractall()
             tf.close()
