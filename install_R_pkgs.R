@@ -1,16 +1,17 @@
 
 pkg <- c("tidyverse",
          "devtools",
-         "furrr",
+         "lintr",
          "psych",
+         "lme4",
          "lmerTest",
          "miceadds",
          "mice",
          "mediation",
          "sem",
-         "sirt",
          "lavaan",
-         "forecast")
+         "RcppEigen"
+         )
 
 install.packages(pkg, dependencies = TRUE)
 
