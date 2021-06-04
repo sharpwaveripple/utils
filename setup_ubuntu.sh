@@ -149,7 +149,7 @@ source ~/.bashrc
 
 conda install -y numpy scipy pandas scikit-learn statsmodels \
       matplotlib seaborn plotly ipython jupyter \
-      isort nose pytest flake8 xlrd lxml openpyxl
+      isort nose pytest flake8 xlrd lxml openpyxl jedi
 
 # this is where the fun begins
 emacs_ver=emacs-27
