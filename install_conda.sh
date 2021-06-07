@@ -25,9 +25,9 @@ else
     bash ${dist_file} -b -p ${HOME}/.anaconda
     source ~/.bashrc
     conda update -y conda
-    conda install -y numpy scipy pandas scikit-learn statsmodels \
-          matplotlib seaborn plotly ipython \
-          isort nose pytest flake8 xlrd lxml openpyxl jedi
+    conda install -y numpy scipy pandas scikit-learn scikit-learn-intelex \
+      statsmodels matplotlib seaborn plotly ipython \
+      isort nose pytest flake8 xlrd lxml openpyxl jedi
     rm ${dist_file}
 fi
 
