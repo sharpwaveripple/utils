@@ -24,7 +24,7 @@ else
     wget https://repo.continuum.io/${dist}/${dist_file}
     bash ${dist_file} -b -p ${HOME}/.anaconda
     source ~/.bashrc
-    conda update conda
+    conda update -y conda
     conda install -y numpy scipy pandas scikit-learn statsmodels \
           matplotlib seaborn plotly ipython \
           isort nose pytest flake8 xlrd lxml openpyxl jedi
