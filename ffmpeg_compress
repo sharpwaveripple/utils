@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+import sys
+import shutil
+import ffmpeg
+
+
+def clean_input_name(name):
+    ext = name.split(".")[-1]
+    output_mp4 = name.replace("_", " ")
+    if "Downloaded" in name:
+        output_mp4 = output_mp4.split("Downloaded")[0]
+        output_mp4 = output_mp4.rstrip(" ")
+        output_mp4 = f"{output_mp4}.{ext}"
+
+    return output_mp4
+
+
+input_mp4 = sys.argv[1]
+tmp_mp4 = input_mp4.rstrip(".mp4") + "_orig.mp4"
+output_mp4 = clean_input_name(input_mp4)
+
+print(f"Copying {input_mp4} to {tmp_mp4}")
+shutil.copyfile(input_mp4, tmp_mp4)
+
+print(f"Compressing {input_mp4}")
+
+(
+    ffmpeg
+    .input(tmp_mp4)
+    .output(output_mp4, video_bitrate=2000000)
+    .run(overwrite_output=True)
+)
+
+print(f"Saving as {output_mp4}")
